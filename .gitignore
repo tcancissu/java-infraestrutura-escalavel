@@ -31,7 +31,8 @@ build/
 ### VS Code ###
 .vscode/
 
-env
+env/app.env
+env/mysql.env
 mysql-data
 ec2-user@ec2-44-211-154-128.compute-1.amazonaws.com
 rsakey.pem

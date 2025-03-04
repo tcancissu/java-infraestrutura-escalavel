@@ -20,7 +20,7 @@ docker run tcancissu/codechella:1.0
 # Comandos SSH
 
 Copie os arquivos para o servidor via SCP
-scp -i key-rsa.pem -r docker-compose.yml env/ ec2-user@IP_EC2:/home/ec2-user 
+scp -i key-rsa.pem -r docker-compose.yml nginx/ env/ ec2-user@IP_EC2:/home/ec2-user
 
 Acessar via SSH
 ssh -i key-pair.pem ec2-user@IP_EC2 >> 
