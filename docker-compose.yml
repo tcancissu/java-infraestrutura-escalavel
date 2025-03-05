@@ -15,7 +15,7 @@ services:
       retries: 10
 
   app:
-    image: tcancissu/codechella:1.1
+    image: tcancissu/codechella:1.4
     env_file: ./env/app.env
     restart: unless-stopped
     depends_on:
@@ -31,6 +31,10 @@ services:
     restart: unless-stopped
     depends_on:
       - app
+
+  redis:
+    image: redis:7.4.2
+    restart: unless-stopped
 
 volumes:
   mysql-data:
